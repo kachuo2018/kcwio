@@ -1,0 +1,1 @@
+/usr/bin/clang++-4.0   -Wall -Wno-invalid-partial-specialization -O3 -DNDEBUG   CMakeFiles/kcwio.token.tmp.dir/kcwio.token.cpp.o  -o kcwio.token.tmp 

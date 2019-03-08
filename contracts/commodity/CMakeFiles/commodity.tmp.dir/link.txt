@@ -1,0 +1,1 @@
+/usr/bin/clang++-4.0   -Wall -Wno-invalid-partial-specialization -O3 -DNDEBUG   CMakeFiles/commodity.tmp.dir/commodity.cpp.o  -o commodity.tmp 
