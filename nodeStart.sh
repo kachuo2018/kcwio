@@ -96,15 +96,25 @@ then
 	exit 1;
 fi
 
-printf "\\n\\tStart node.\\n"
-nohup nodkcw --http-alias=serverIP:58888 &
+#printf "\\n\\tStart node.\\n"
+#nohup nodkcw --http-alias=serverIP:58888 &
 
-printf "\\n\\tStart node wallet.\\n"
-nohup kkcwd --http-alias=serverIP:58900 &
+#printf "\\n\\tStart node wallet.\\n"
+#nohup kkcwd --http-alias=serverIP:58900 &
 
-printf "\\n\\tCreate node wallet.\\n"
-printf "\\n\\tCommand: clkcw -u http://127.0.0.1:58888  --wallet-url http://127.0.0.1:58900 wallet create -n walletName --to-console.\\n"
-WALLETRET=$(clkcw -u http://127.0.0.1:58888  --wallet-url http://127.0.0.1:58900 wallet create -n walletName --to-console)
-echo $WALLETRET
+#printf "\\n\\tCreate node wallet.\\n"
+#printf "\\n\\tCommand: clkcw -u http://127.0.0.1:58888  --wallet-url http://127.0.0.1:58900 wallet create -n walletName --to-console.\\n"
+#WALLETRET=$(clkcw -u http://127.0.0.1:58888  --wallet-url http://127.0.0.1:58900 wallet create -n walletName --to-console)
+#echo $WALLETRET
+
+printf "\n\n"
+printf "\t _    _   _______  _      _ _________ _______\n"
+printf '\t| |  / / (  _____)| |    | |\__   __/(  ___  )\n'
+printf "\t| | / /  | (      | |    | |   ) (   | (   ) |\n"
+printf "\t| |/ /   | |      | |    | |   | |   | |   | |\n"
+printf "\t| | /    | |      | | /\ | |   | |   | |   | |\n"
+printf "\t| |\ \   | |      | |/  \| |   | |   | |   | |\n"
+printf "\t| | \ \  | (_____ \   /\   /___) (___| (___) |\n"
+printf "\t|_|  \_\ (_______) \_/  \_/ \_______/(_______)\n${txtrst}"
 
 printf "\\n\\tNode successfully installed at /usr/local/kcwio/bin.\\n"
